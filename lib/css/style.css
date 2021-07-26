@@ -1,0 +1,120 @@
+main {
+    flex: 1 0 auto;
+}
+
+.header {
+    height: 130px;
+    width: 100%;
+    display: block;
+}
+
+.bannerimage {
+    background-image: url('img/banners/SASBO Dashboard Elements-01.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    height: 30px;
+    /*padding: 14px 10px;*/
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+
+.box a
+{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    width:10%;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    -webkit-animation: 9s colorChange alternate;
+    transition height 0.3s, width 0.3s 0.1s
+    input:focus ~ .border
+
+}
+@-webkit-keyframes colorChange {
+    0%   { border-color: #007bff;  }
+    5%  { border-color: #6610f2; }
+    10%  { border-color: #6f42c1;}
+    15%  { border-color: #e83e8c; }
+    20% { border-color: #dc3545;}
+    25%   { border-color: #fd7e14;  }
+    30%  { border-color: #ffc107; }
+    35%  { border-color: #28a745;}
+    40%  { border-color: #20c997; }
+    45%  { border-color: #17a2b8;}
+    50%  { border-color: #6c757d;  }
+    55%  { border-color: #343a40; }
+    60%  { border-color: #007bff;}
+    65%  { border-color: #6c757d; }
+    70% { border-color: #28a745;}
+    75% { border-color: #17a2b8;}
+    80% { border-color: #ffc107;}
+    85% { border-color: #dc3545;}
+    90% { border-color: #343a40;}
+    95% { border-color: #28a745;}
+    100% { border-color: #20c997;}
+}
+.imageB {
+
+    display: block;
+    margin: auto;
+}
+
+
+.ImageB.col-xl-12.col-md-12.col-sm-12 {
+    /* padding: 454px 0 403px 0; */
+    margin: 25% auto 25%;
+}
+
+.imageC {
+    margin-top: 2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    height: 66px;
+}
+.row{
+    background-image: url('images/SA Tourism Dashboard final-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 360px;
+    /*background-size: 40%;*/}
+.imgc{
+    background-image: url("images/SA Tourism Dashboard final-07.png");
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    position: relative;
+}

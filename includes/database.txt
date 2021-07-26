@@ -1,0 +1,21 @@
+User name:
+
+Use text field
+db_admin
+Host name:
+
+Local
+localhost
+
+Password:
+Authentication plugin
+ 
+
+Native MySQL authentication
+Generate password:
+lJ1xj1NXBE0@R9l2
+
+CREATE USER 'db_admin'@'localhost' 
+IDENTIFIED VIA mysql_native_password USING '***';
+GRANT ALL PRIVILEGES ON *.* TO 'db_admin'@'localhost' 
+REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `quansole`.* TO 'db_admin'@'localhost';

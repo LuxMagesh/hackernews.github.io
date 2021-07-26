@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="canonical" href="https://codepen.io/ettrics/pen/ZYqKGb">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    height: 100%;
+    background: url('images/img_9.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#nav-wrapper {
+  width: auto;
+  margin: auto;
+}
+#container {
+  width: 800;
+  margin: auto;
+}
+
+/*Neon*/
+p {
+  text-align: center;
+  font-size: 2em;
+  margin: 10px 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p:nth-child(1) a {
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+
+p:nth-child(1) a {
+  font-size: 1.5em;
+  color: #228dff;
+  font-family: Iceland;
+}
+
+p:nth-child(1) a:hover {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(5) a {
+  color: #ff9900;
+  font-family: Audiowide;
+}
+
+p:nth-child(5) a:hover {
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+p a:hover {
+  color: #ffffff;
+}
+/*glow for webkit*/
+
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+/*glow for mozilla*/
+
+
+
+@-moz-keyframes neon1{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+
+
+
+
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+/*glow*/
+
+
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  p {
+    font-size: 2.5em;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.strips {
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+.strips__strip {
+  will-change: width, left, z-index, height;
+  position: absolute;
+  width: 20%;
+  min-height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.strips__strip:nth-child(1) {
+  left: 0;
+}
+.strips__strip:nth-child(2) {
+  left: 20vw;
+}
+.strips__strip:nth-child(3) {
+  left: 40vw;
+}
+.strips__strip:nth-child(4) {
+  left: 60vw;
+}
+.strips__strip:nth-child(5) {
+  left: 80vw;
+}
+.strips__strip:nth-child(1) .strip__content {
+  background: #244f75;
+  transform: translate3d(-100%, 0, 0);
+  -webkit-animation-name: strip1;
+          animation-name: strip1;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.strips__strip:nth-child(2) .strip__content {
+  background: #60bfbf;
+  transform: translate3d(0, 100%, 0);
+  -webkit-animation-name: strip2;
+          animation-name: strip2;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.strips__strip:nth-child(3) .strip__content {
+  background: #8c4b7e;
+  transform: translate3d(0, -100%, 0);
+  -webkit-animation-name: strip3;
+          animation-name: strip3;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.strips__strip:nth-child(4) .strip__content {
+  background: #f8bb44;
+  transform: translate3d(0, 100%, 0);
+  -webkit-animation-name: strip4;
+          animation-name: strip4;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.strips__strip:nth-child(5) .strip__content {
+  background: #f24b4b;
+  transform: translate3d(100%, 0, 0);
+  -webkit-animation-name: strip5;
+          animation-name: strip5;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@media screen and (max-width: 760px) {
+  .strips__strip {
+    min-height: 20vh;
+  }
+  .strips__strip:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(2) {
+    top: 20vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(3) {
+    top: 40vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(4) {
+    top: 60vh;
+    left: 0;
+    width: 100%;
+  }
+  .strips__strip:nth-child(5) {
+    top: 80vh;
+    left: 0;
+    width: 100%;
+  }
+}
+.strips .strip__content {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+          animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.strips .strip__content:hover:before {
+  transform: skew(-30deg) scale(3) translate(0, 0);
+  opacity: 0.1;
+}
+.strips .strip__content:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.05;
+  transform-origin: center center;
+  transform: skew(-30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.strips .strip__inner-text {
+  will-change: transform, opacity;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.strips__strip--expanded {
+  width: 100%;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 3;
+  cursor: default;
+}
+@media screen and (max-width: 760px) {
+  .strips__strip--expanded {
+    min-height: 100vh;
+  }
+}
+.strips__strip--expanded .strip__content:hover:before {
+  transform: skew(-30deg) scale(1) translate(0, 0);
+  opacity: 0.05;
+}
+.strips__strip--expanded .strip__title {
+  opacity: 0;
+}
+.strips__strip--expanded .strip__inner-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.strip__title {
+  display: block;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-size: 3.5vw;
+  color: white;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media screen and (max-width: 760px) {
+  .strip__title {
+    font-size: 28px;
+  }
+}
+
+.strip__close {
+  position: absolute;
+  right: 3vw;
+  top: 3vw;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  transition-delay: 0.5s;
+}
+.strip__close--show {
+  opacity: 1;
+}
+
+@-webkit-keyframes strip1 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes strip1 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes strip2 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip2 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes strip3 {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip3 {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes strip4 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip4 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes strip5 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes strip5 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* Demo purposes */
+body {
+  font-family: "Lato";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+.fa {
+  font-size: 30px;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper cyan">
+          <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>QuanSole</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="hacker-news.php"><i class="material-icons">all_inclusive</i></a></li>
+            <li><a href="main.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="modal.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="modal_velocity.html"><i class="material-icons">aspect_ratio</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="container" class="container">
+      <div class="row">
+            <div class="col s12">
+                <p><a href="https://en.wikipedia.org/wiki/Blue">
+                    BLUE
+                  </a></p>
+            </div>
+            <div class="col s6 cyan">6-columns (one-half)</div>
+            <div class="col s6 orange">6-columns (one-half)</div>
+          </div>
+          <br>
+
+      
+          
+      </div>
+         <section class="strips">
+            <article class="strips__strip">
+              <div class="strip__content">
+                <h1 class="strip__title" data-name="Lorem">Awesome</h1>
+                <div class="strip__inner-text">
+                  <h2>Ettrics</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+                  <p>
+                    <a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </p>
+                </div>
+                
+              </div>
+            </article>
+            <article class="strips__strip">
+              <div class="strip__content">
+                <h1 class="strip__title" data-name="Ipsum">Words</h1>
+                <div class="strip__inner-text">
+                  <h2>Ettrics</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+                  <p>
+                    <a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="strips__strip">
+              <div class="strip__content">
+                <h1 class="strip__title" data-name="Dolor">Go</h1>
+                <div class="strip__inner-text">
+                  <h2>Ettrics</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+                  <p>
+                    <a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="strips__strip">
+              <div class="strip__content">
+                <h1 class="strip__title" data-name="Sit">Inside</h1>
+                <div class="strip__inner-text">
+                  <h2>Ettrics</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+                  <p>
+                    <a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="strips__strip">
+              <div class="strip__content">
+                <h1 class="strip__title" data-name="Amet">Here</h1>
+                <div class="strip__inner-text">
+                  <h2>Ettrics</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+                  <p>
+                    <a href="https://twitter.com/ettrics" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <i class="fa fa-close strip__close"></i>
+          </section> 
+</div>
+ </body>
+<script type="text/javascript" src="lib/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="lib/js/tether.min.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/js/dope.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script  src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-1fdce47b-e001-c502-aaf5-fa919ed6fb4a" crossorigin></script>
+
+</html>
+
+
+
+
